@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
 import { Component } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
+@Component({
+  selector: 'app-data-exporter',
+  template: `<button (click)="downloadJson()">Télécharger JSON</button>`
 })
-export class DataExporterService {
+export class DataExporterComponent {
 
   data = {
     name: "Exemple",
